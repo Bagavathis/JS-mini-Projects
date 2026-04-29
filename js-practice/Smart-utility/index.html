@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Smart Utility App </title>
+         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
+    </head>
+    <body>
+        <h2>Smart Utility DashBoard</h2>
+        <div class="app">
+            <!--Sidebar-->
+            <div class="sidebar"> 
+                <h3>Explorer</h3>
+                
+                <button onclick="showSection('weather')"><i class="fas fa-cloud-sun"></i> Weather </button>
+                <button onclick="showSection('user')"><i class="fas fa-users"></i> Users </button>
+                <button onclick="showSection('todo')"><i class="fas fa-list"></i> To-Do List </button>
+                <button onclick="showSection('note')"><i class="fas fa-sticky-note"></i> Notes </button>
+            </div>
+
+            <!--Main Content-->
+            <div class="main">
+                
+                <!--Weather Section-->
+                <section id="weatherSection">
+                    <h3>Weather</h3>
+                    <input type="text" id="cityInput" placeholder="Enter City...">
+                    <button id="searchBtn">Search</button>
+                    <div id="weatherResult"></div>
+                </section>
+            
+                <!--User Section-->
+                <section id="userSection">
+                    <h3>Users</h3>
+                    <input type="text" id="userInput" placeholder="Search User...">
+                    <div id="userContainer"></div>
+                    <div id="pagination"></div>
+                </section>
+                
+                <!--To-Do List -->
+                <section id="todoSection">
+                    <h3>To-Do List </h3>
+                    <input type="text" id="todoInput" placeholder="Enter Task...">
+                    <button id="addtaskBtn">Add Task </button>
+                    <ul id="taskList"></ul>
+                </section>
+                
+                <!--Notes-->
+                <section id="noteSection">
+                    <h3>Notes</h3>
+                    <textarea id="noteInput" placeholder="Give your Notes..."></textarea>
+                    <button id="savenoteBtn">SaveNotes</button>
+                    <div id="notesContainer"></div>
+                </section>
+                
+                <!--Toggle Theme-->
+                <section id="toggleTheme">
+                    <h3>Toggle Theme</h3>
+                    <button id="toggleThemeBtn">Toggle Dark Mode</button>
+                </section>
+       
+                <!--Modal-->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <button id="closeBtn">&times;</button>
+                        <div id="modalContent"></div>
+                     </div>
+                </div>
+            </div>   
+        </div>                                                  
+        
+        <script src="script.js"></script>
+        
+    </body>
+</html>                                                                                         

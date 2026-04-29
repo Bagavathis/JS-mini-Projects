@@ -1,0 +1,26 @@
+body {
+    margin:150px;
+    height: 400px;
+    display:flex ;
+    justify-content: center;
+    align-items:center ;
+    background-color:#f2f2f2;
+    font-family:arial,sans-serif ;
+}
+.container {
+    background-color: #fff;
+    padding: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: background-color 1s linear;
+}
+.light{
+    background-color: #f2f2f2;
+    color: black;
+}
+.dark{
+    background-color: #000000;
+    color: white;
+}

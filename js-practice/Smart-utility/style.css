@@ -1,0 +1,157 @@
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba( 0, 0, 0, 0.4);
+    z-index: -1;
+    
+}
+/* Header*/
+h2{
+    padding: 20px;
+    margin: 0;
+    background:#1e293b;
+    color: white;
+    text-align: center;
+}
+h3{
+    color: white;
+}
+/* Grid layout */
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+/* Card Style */
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+/*Inputs & Text Area*/
+input, textarea{
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+/*button*/
+button{
+    cursor: pointer;
+    padding: 10px, 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    margin-right: 10px;
+}
+button:hover{
+    background:  #2563eb;
+}
+/*Cards inside user*/
+.card{
+    background-color: #f1f5f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+/*Dark Mode*/
+.dark{
+    background: #0f172a;
+    color: white;
+}
+.dark section {
+    background: #1e293b;
+}
+.dark input, 
+.dark textarea {
+    background: #334155;
+    color: white;
+    border: none;
+}
+/*list*/
+li button {
+    margin-left: 10px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+}
+/*modal*/
+.modal {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.modal-content {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#closeBtn {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#pagination {
+    margin-top: 10px;
+}
+
+#pagination button {
+    margin: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.app{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    width: 200px;
+    background: #1e293b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar button{
+    background: none;
+    color: white;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebar button :hover{
+    background: #334155;
+}
+.content{
+    flex: 1;
+    padding: 20px;
+    background: #f1f5f9;
+}
+section{
+    display: none;
+}

@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 55vh;
+    background-color: antiquewhite;
+    font-family: arial,sans-serif;
+    margin: 150px; /* that container box will replaced in center */
+}
+.container{
+    background-color: aliceblue;
+    padding: 50px ;
+    width: 300px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0,12px,25px rgba(0,0,0,1);
+}
+textarea{
+    height: 70px;
+    width: 160px ;
+    margin: 10px;
+    font-size: 16px;
+}
+.output{
+    margin-top: 20px;
+    font-size: 18px;
+}

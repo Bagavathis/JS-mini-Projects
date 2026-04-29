@@ -1,0 +1,23 @@
+body{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    font-family: arial, sans-serif;
+}
+.container{
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: center;
+    background-color: white;
+}
+button{
+    padding: 10px 16px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: royalblue;
+    border-color: royalblue;
+}
