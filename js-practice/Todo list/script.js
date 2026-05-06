@@ -8,7 +8,17 @@ function addtodo(){
         alert("Please enter  a task");
     }else{
         var li = document.createElement("li");
-        li.textContent = task;
+
+        //Task text
+        var span = document.createElement("span");
+        span.textContent = task;
+
+        //Complete Toggle
+        span.onclick = function(){
+            span.classList.toggle("completed");
+        };
+
+        //Delete Button
 
         var deleteBtn = document.createElement("button");
         deleteBtn.textContent = "x";
@@ -16,6 +26,7 @@ function addtodo(){
         deleteBtn.onclick = function(){
             list.removeChild(li);
         };
+        li.appendChild(span);
         li.appendChild(deleteBtn);
         list.appendChild(li);
 

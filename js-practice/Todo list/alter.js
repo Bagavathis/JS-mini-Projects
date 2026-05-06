@@ -4,6 +4,8 @@ var list = document.querySelector("#todolist");
 //windows loading
 window.onload = function(){
     loadTodo();
+    var today = new Date().toLocaleDateString();
+    document.getElementById("todayDate").textContent = "Today's Tasks: " + today;
 }
 
 function addtodo(){
@@ -21,8 +23,25 @@ function addtodo(){
 
 function createTodoElement(task){
     var li = document.createElement("li");
-    li.textContent = task;
 
+    //checkbox
+    var checkbox= document.createElement("input");
+    checkbox.type = "checkbox"; 
+
+
+    //task text
+    var span = document.createElement("span");
+    span.textContent = task;
+
+    checkbox.onchange = function(){
+        if(checkbox.checked){
+            span.classList.add("completed");
+        }else{
+            span.classList.remove("completed");
+        }   
+    }   
+                
+    //delete button
     var deleteBtn = document.createElement("button");
     deleteBtn.textContent ="x";
 
@@ -30,9 +49,11 @@ function createTodoElement(task){
         list.removeChild(li);
         removeFromLocalStorage(task);
     }
+    li.appendChild(checkbox);
+    li.appendChild(span);
     li.appendChild(deleteBtn);
     list.appendChild(li);
-}
+} 
 
 //saveToLocalStorage
 
