@@ -370,14 +370,6 @@ function loadNotes(){
 }
 loadNotes();
 
-//Toggle Theme
-var toggleButton = document.getElementById("toggleThemeBtn");
-
-//load saved theme
-if(localStorage.getItem("theme")==="dark"){
-    document.body.classList.add("dark");
-}
-
 //Toggle theme
 var toggleButton = document.getElementById("toggleThemeBtn");
 toggleButton.onclick=function(){
@@ -397,7 +389,7 @@ if(savedTheme === "dark"){
 
 function showSection(section) {
 
-    var sections = ["weather", "user", "todo", "note"];
+    var sections = ["weather", "user", "todo", "note", "toggleTheme"];
 
     for (var i = 0; i < sections.length; i++) {
         var el= document.getElementById(sections[i] + "Section");
