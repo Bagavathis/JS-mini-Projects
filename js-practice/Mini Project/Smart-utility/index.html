@@ -39,9 +39,15 @@
                 
                 <!--To-Do List -->
                 <section id="todoSection">
-                    <h3>To-Do List </h3>
+                    <h4>To-Do List </h4>
+                    <p id="todayDate">Date</p>
                     <input type="text" id="todoInput" placeholder="Enter Task...">
                     <button id="addtaskBtn">Add Task </button>
+                    <div class="history-buttons">
+                        <button onclick="loadTasks()">Today</button>
+                        <button onclick="showHistory('weekly')">Weekly</button>
+                        <button onclick="showHistory('monthly')">Monthly</button>
+                    </div>
                     <ul id="taskList"></ul>
                 </section>
                 

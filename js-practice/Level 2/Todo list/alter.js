@@ -4,12 +4,12 @@ var list = document.querySelector("#todolist");
 //windows loading
 window.onload = function(){
     loadTodo();
-    var today = new Date().toLocaleDateString();
+    var today = new Date().toLocalDateString();
     document.getElementById("todayDate").textContent = "Today's Tasks: " + today;
 }
 
 function addtodo(){
-    var task = input.value;
+    var task = input.value; 
     if(task===""){
         alert("Please enter a task");
     }else{

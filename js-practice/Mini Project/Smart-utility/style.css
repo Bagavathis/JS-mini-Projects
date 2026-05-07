@@ -155,3 +155,23 @@ li button {
 section{
     display: none;
 }
+.completed{
+    font-weight: 500;
+    color: green;
+}
+.checkbox{
+    color: green;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+}
+.done.checkbox{
+    display: inline;
+}
+.history-buttons.today{
+    margin-top: 10px;
+    color: white;
+    background-color: #334155 ;
+
+}
