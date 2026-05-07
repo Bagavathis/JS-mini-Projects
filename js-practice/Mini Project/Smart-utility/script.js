@@ -379,6 +379,7 @@ if(localStorage.getItem("theme")==="dark"){
 }
 
 //Toggle theme
+var toggleButton = document.getElementById("toggleThemeBtn");
 toggleButton.onclick=function(){
     document.body.classList.toggle("dark");
     if(document.body.classList.contains("dark")){
@@ -387,6 +388,11 @@ toggleButton.onclick=function(){
         localStorage.setItem("theme","light");
     }
 }  
+//load saved theme
+var savedTheme = localStorage.getItem("theme");
+if(savedTheme === "dark"){
+    document.body.classList.add("dark");
+}
 
 
 function showSection(section) {
